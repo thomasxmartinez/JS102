@@ -21,3 +21,26 @@ for(var key in animal){
   }
 }
 console.log(count);
+
+var noiseArray = [];
+noiseArray.push('oink');
+noiseArray.unshift('woof');//adds to beginning of array;
+noiseArray.push('moo');//add to end of array;
+console.log(noiseArray);
+
+noiseArray[noiseArray.length] = 'kaching';
+console.log(noiseArray);
+console.log(noiseArray.length);
+console.log(noiseArray[noiseArray.length-1]);
+
+animal.noises = noiseArray;
+
+var animals = [];
+animal.animals = animals;
+
+var quackers = { username: 'DaffyDuck', tagline: 'Yippeee!', noises: ['quack', 'honk', 'sneeze', 'growl'] };
+var lion = { username: 'simba', tagline: 'Yolo!', noises: ['roar', 'honk', 'sneeze', 'growl'] };
+var tiger = { username: 'riot', tagline: 'Yikes!', noises: ['growl', 'honk', 'sneeze', 'growl'] };
+var liger = { username: 'biggie', tagline: 'im bigga than you', noises: ['complains'] };
+animals.push(quackers, lion, tiger, liger);
+console.log(animal.animals);
